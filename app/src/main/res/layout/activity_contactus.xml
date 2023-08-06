@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F1F1"
+    tools:context=".ContactusActivity">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginplus22"
+        android:background="@drawable/boarder3"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/marginplus2"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivmail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/gmail"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pustakmarket2020@gmail.com"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:textSize="@dimen/textsizemedium"
+            />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivwebsite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google"
+                android:layout_marginLeft="@dimen/marginplus2"
+
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.pustakmarket.com"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus3"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizemedium"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_marginBottom="@dimen/marginplus2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivcall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:src="@drawable/telephone"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+917385486832"
+                android:layout_marginLeft="@dimen/marginplus3"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizemedium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

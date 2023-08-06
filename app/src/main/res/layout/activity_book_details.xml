@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".BookDetailsActivity">
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/marginplus10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/marginplus2"
+        android:layout_marginBottom="@dimen/marginplus2"
+        android:background="@color/white"
+        >
+
+            <ImageView
+                android:id="@+id/slider"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:padding="@dimen/marginplus1"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_bookdetail_name"
+            android:text="Book Name"
+            android:textSize="@dimen/textsizemextralarge"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/marginplus1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/marginplus2"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginplus3"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_bookAuthor"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author:"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textsizemedium"
+ />
+            <TextView
+                android:id="@+id/tv_bookAuthorname"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author:"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizemedium"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_bookIsbn"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISBN No:"
+                android:gravity="center"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/textsizeminismall"
+
+                android:layout_marginTop="1dp" />
+            <TextView
+                android:id="@+id/tv_bookisnbnno"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="isbnnum"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizeminismall"
+
+                android:layout_marginTop="1dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginplus3"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_bookPublisher"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publisher:"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textsizemedium"
+                />
+            <TextView
+                android:id="@+id/tv_bookPublishername"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="publisher"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizemedium"
+ />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginplus3"
+            android:layout_marginLeft="@dimen/marginplus2"
+
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_bookPrice"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textsizemedium"
+                />
+            <TextView
+                android:id="@+id/tv_book_price"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textsizemedium"
+                android:layout_marginLeft="@dimen/marginplus3"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ldiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginplus5"
+            android:layout_marginLeft="@dimen/marginplus2"
+
+            android:layout_marginTop="@dimen/marginplus3"
+            android:orientation="horizontal">
+
+ />
+
+            <TextView
+                android:id="@+id/tv_book_discountprice"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/marginplus3"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizemedium" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/marginplus3"
+
+                android:textColor="@color/purple"
+                android:textSize="@dimen/textsizemedium" />
+            <TextView
+                android:id="@+id/tv_book_priceoffer"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00% off"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/textsizemedium"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/marginplus3"
+ />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_book_free"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FREE"
+            android:layout_marginBottom="@dimen/marginplus5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+
+            android:layout_marginTop="1dp" />
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="SHARE"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:background="@color/white"
+
+                    />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@color/grey"
+                    />
+                <TextView
+                    android:id="@+id/tv_addtowishlist"
+
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="ADD TO WISHLIST"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:background="@color/white"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_ship"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Shipping charges will be applicable for this book"
+                    android:gravity="center"
+                    android:background="@color/white"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_del"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginplus1"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Standard delivery in 7 business days"
+                    android:gravity="center"
+                    android:background="@color/white"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_bookdetails"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boarder2"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Book Details"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/next"
+                    android:drawableTint="@color/grey"
+
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_bookreview"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginplus1"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boarder2"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Book Reviews"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:drawableRight="@drawable/next"
+                    android:drawableTint="@color/grey"
+
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_preview"
+
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/marginplus1"
+            android:layout_marginBottom="@dimen/marginplus12"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boarder2"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Book Description"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/next"
+                    android:drawableTint="@color/grey"
+
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn_gotocart"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="GO TO CART"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn_addtocart"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/btn_gotocart"
+            android:layout_height="wrap_content"
+            android:text="ADD TO CART"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_buyebook"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUY E-Book"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_notavailable"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Availabe"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"  />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_buyenote"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy E-Note"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_readbook"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Read Book"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_downloadmagazine"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Magazine"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+
+         </RelativeLayout>
+
+</RelativeLayout>

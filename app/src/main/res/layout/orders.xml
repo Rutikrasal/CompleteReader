@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginplus1"
+    android:padding="@dimen/marginplus1"
+    android:background="@drawable/boarder"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order status:"
+        android:textSize="@dimen/textsizemedium"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/marginplus1"
+        />
+
+    <TextView
+        android:id="@+id/tv_order_delstatus"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_order_status"
+
+        android:text="Order status:"
+        android:textSize="@dimen/textsizemedium"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/marginplus1"
+        />
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_order_delstatus"
+        android:text="Total:"
+        android:textColor="@color/black"
+        android:layout_marginLeft="2dp"
+        android:textSize="@dimen/textsizemedium"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/transparent"
+        android:layout_below="@+id/tv_total"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginplus1"
+        android:layout_marginRight="@dimen/marginplus1"
+        android:layout_marginTop="@dimen/marginplus1"
+        android:layout_below="@+id/tv_total"
+        android:text=""
+        android:textColor="@color/black1"
+        android:textSize="@dimen/textsizemedium"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/marginplus1"
+        android:visibility="visible"
+        android:layout_below="@+id/btn"
+        android:id="@+id/linear_products"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_bookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizemedium" />
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_itemcount"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizemedium" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Date:"
+        android:textSize="@dimen/textsizesmall"
+        android:textColor="@color/black"
+
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

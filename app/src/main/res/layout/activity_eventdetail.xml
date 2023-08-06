@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".EventdetailActivity">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_marginBottom="@dimen/marginplus3"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:id="@+id/event_image"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="500dp"
+                    android:padding="@dimen/marginplus1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_eventspeaker_name"
+                        android:textSize="@dimen/textsizemlarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:layout_marginLeft="@dimen/marginplus2"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_bookAuthor"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speaker Mandhan:"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+                    <TextView
+                        android:id="@+id/tv_eventprice"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+                    <TextView
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColor="@color/purple"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+                    <TextView
+                        android:id="@+id/tv_eventonlineprice"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginplus3"
+                    android:layout_marginLeft="@dimen/marginplus2"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_bookIsbn"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Role:"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+                    <TextView
+                        android:id="@+id/tv_speakerrole"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizemedium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginplus3"
+                    android:layout_marginBottom="@dimen/marginplus3"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_bookPublisher"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speciality:"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+                    <TextView
+                        android:id="@+id/tv_speakerspeciality"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizemedium"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/card_eventdetails"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/marginplus1"
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boarder2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textSize="@dimen/textsizemedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="Event Details"
+                            android:layout_marginLeft="@dimen/marginplus1"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:drawableRight="@drawable/next"
+                            android:drawableTint="@color/grey"
+
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_preview"
+
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/marginplus1"
+                android:layout_marginBottom="@dimen/marginplus12"
+                android:layout_height="50dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boarder2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="@dimen/textsizemedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Event Description"
+                        android:layout_marginLeft="@dimen/marginplus1"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:drawableRight="@drawable/next"
+                        android:drawableTint="@color/grey"
+
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn_bookevent"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Book Event Speaker"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

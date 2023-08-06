@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F1F1"
+
+    tools:context=".EventPreviewActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#F3F1F1"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F1F1"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boarder3"
+            android:orientation="vertical">
+            <TextView
+                android:background="@color/white"
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

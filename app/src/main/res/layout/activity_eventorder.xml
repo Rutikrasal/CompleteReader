@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventorderActivity">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginplus2"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Your Name"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Your Email"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/et_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Phone Number"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Address"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/et_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Zip Code"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="City"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_eventlocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Event Location"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_eventdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Double Click to Select Event Date"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_eventtime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:hint="Double Click to Select Event Time"
+                android:gravity="center"/>
+            <Spinner
+                android:id="@+id/spn_eventtype"
+                android:layout_marginTop="@dimen/marginplus1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boarder"
+
+                />
+            <TextView
+                android:id="@+id/tv_eventtc"
+                android:layout_marginTop="@dimen/marginplus1"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/marginplus10"
+                android:layout_height="wrap_content"
+                android:text="We Will contact you within 24hours.Please read our policy at terms and condition page .if you agree with our policy then place book now."
+                />
+           <!-- <Button
+                android:layout_marginTop="@dimen/marginplus1"
+                android:id="@+id/btn_bookevent"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Book Event Speaker"
+                android:textColor="@color/white"
+                android:background="@color/purple"
+                />-->
+        </LinearLayout>
+    </ScrollView>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn_bookevent"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Event Speaker"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>

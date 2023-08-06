@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:layout_collapseMode="pin">
+
+<!--
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:ellipsize="end"
+            android:gravity="center"
+
+            android:maxLines="1"
+            android:text=" "
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>-->
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F1F1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                android:layout_marginBottom="@dimen/marginplus1"
+                app:layout_collapseMode="parallax">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpagerslid"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+
+                    />
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:background="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/selectservice"
+                        android:text="Top Books"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/marginplus6"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_marginTop="@dimen/marginplus1"
+                        android:layout_marginBottom="@dimen/marginplus2"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/marginplus1"
+                        android:textSize="@dimen/textsizemlarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+
+                        <TextView
+                            android:id="@+id/tv_seealltopbook"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="@dimen/marginplus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/textsizesmall"
+                            android:layout_marginLeft="@dimen/marginplus1"
+                            android:layout_marginTop="@dimen/marginplus2"
+                            android:text="SEE ALL"
+                            />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_below="@id/selectservice"
+                        android:id="@+id/recyle_topbook"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        />
+
+                    </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_topebook"
+                android:text="Top E-books"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginplus8"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/marginplus1"
+                android:textSize="@dimen/textsizemlarge"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tv_seealltopebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEE ALL"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginTop="@dimen/marginplus4"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginLeft="@dimen/marginplus1"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyle_top_ebook"
+                tools:itemCount="4"
+                android:layout_below="@id/tv_topebook"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_recentbooks"
+                android:text="Recent Books"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginplus8"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/marginplus1"
+                android:textSize="@dimen/textsizemlarge"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tv_seeallrecentbook"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginplus1"
+                android:layout_marginTop="@dimen/marginplus4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:gravity="center"
+                android:textSize="@dimen/textsizesmall"
+                android:text="SEE ALL"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyle_recentbook"
+                tools:itemCount="4"
+                android:layout_below="@id/tv_recentbooks"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_recentebooks"
+                    android:text="Recent E-Books"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_seeallrecentebook"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsizesmall"
+                    android:text="SEE ALL"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_recentebook"
+                    tools:itemCount="4"
+                    android:layout_below="@id/tv_recentebooks"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_magazine"
+                    android:text="Magazines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_seeallmagazine"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEE ALL"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+
+                    />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_magazine"
+                    tools:itemCount="4"
+                    android:layout_below="@id/tv_magazine"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_studentbooks"
+                android:text="Student Books"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginplus8"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/marginplus1"
+                android:textSize="@dimen/textsizemlarge"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+                <TextView
+                    android:id="@+id/tv_seeallstudentbook"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+
+                    android:text="SEE ALL"
+                    />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyle_studentbook"
+                tools:itemCount="4"
+                android:layout_below="@id/tv_studentbooks"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_studentebooks"
+                    android:text="Student E-Books"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_seeallstudentebook"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+
+                    android:text="SEE ALL"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_studentebook"
+                    tools:itemCount="4"
+                    android:layout_below="@id/tv_studentebooks"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_studenttextnote"
+                    android:text="Student Text Notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_seeallstudenttextnote"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+
+                    android:text="SEE ALL"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_studenttextnote"
+                    tools:itemCount="4"
+                    android:layout_below="@id/tv_studenttextnote"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_studenttextenote"
+                    android:text="Student Text E-Notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_seeallstudenttextenote"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginplus1"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+
+                    android:text="SEE ALL"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_studenttextenote"
+                    tools:itemCount="4"
+                    android:layout_below="@id/tv_studenttextenote"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_event"
+                    android:text="Events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_seeallevent"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEE ALL"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/marginplus4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/marginplus2"
+
+                    />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_event"
+                    tools:itemCount="4"
+                    android:layout_below="@id/tv_event"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_cat"
+                    android:text="Categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/marginplus8"
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/marginplus1"
+                    android:textSize="@dimen/textsizemlarge"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_cat"
+                    android:layout_below="@id/tv_cat"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

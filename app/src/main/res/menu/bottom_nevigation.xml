@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_books"
+        android:icon="@drawable/bookb"
+        app:showAsAction="withText"
+        android:title="Books" />
+    <item
+        android:id="@+id/navigation_search"
+        android:iconTint="@color/black"
+        android:icon="@drawable/search"
+        app:showAsAction="withText"
+        android:title="Search" />
+<!--    <item
+        android:id="@+id/navigation_library"
+        android:icon="@mipmap/ic_book"
+        android:title="Books" />-->
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/cart"
+        app:showAsAction="withText"
+        android:title="Cart" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/user"
+        app:showAsAction="withText"
+        android:title="Account" />
+</menu>

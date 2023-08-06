@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrederSummaryActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizemedium"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizesmall"
+                    android:text="Ebook Name:"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv_ebookname"
+                    android:textSize="@dimen/textsizesmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginLeft="@dimen/marginplus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Book Price:"
+                    android:textSize="@dimen/textsizesmall"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_totalbookprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizesmall"
+                    android:textColor="@color/black"
+
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:textColor="@color/black"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Details"
+                android:textSize="@dimen/textsizemedium"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Methods"
+                android:gravity="center"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/marginplus1"
+                android:textColor="@color/red"
+                android:layout_marginLeft="@dimen/marginplus1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now we have only option of Online Payment"
+                android:textSize="@dimen/textsizesmall"
+                android:textStyle="bold"
+                />
+            <CheckBox
+                android:id="@+id/ch_paymentgateway"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment gateway"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/marginplus2"
+                android:textColor="@color/blue"
+                android:id="@+id/tv_ebooktc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We Will contact you within 24hours.Please read our policy at terms and condition page .if you agree with our policy then place book now."
+                />
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:background="@color/purple"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

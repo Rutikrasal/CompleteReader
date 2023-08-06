@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/dashboarddesign"
+        android:layout_marginBottom="@dimen/marginplus12"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+android:layout_marginBottom="@dimen/marginplus10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right">
+
+        <FrameLayout
+
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp">
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_badge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/whatsapp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_below="@+id/icon_badge"
+                    android:text="Contact Us"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/blue_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Main content -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+
+            android:background="@color/grey"
+            app:menu="@menu/bottom_nevigation" />
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

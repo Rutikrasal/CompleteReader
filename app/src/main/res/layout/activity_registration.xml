@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F1F1"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="SIGNUP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/marginplus2"/>
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boarder3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="310dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_marginBottom="@dimen/marginplus2"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2">
+
+
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Your Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/textsizemlarge"
+            />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="310dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2">
+
+                <EditText
+            android:id="@+id/et_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:textColor="@color/black"
+
+                    android:inputType="text"
+                    android:textSize="@dimen/textsizemlarge"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="310dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2">
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your email"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textSize="@dimen/textsizemlarge"
+            />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="310dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2">
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textSize="@dimen/textsizemlarge"
+            />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2">
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Address"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textSize="@dimen/textsizemlarge"
+            />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="310dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/marginplus2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus2">
+
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your City"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizemlarge"
+ />
+
+
+            </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spn_usertype"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="60dp"
+        android:entries="@array/usertype_array"
+        />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/marginplus2"
+        android:background="@drawable/boarder4"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/tv_alreadyregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginplus5"
+        android:layout_marginTop="@dimen/marginplus2"
+android:text="Already have an account?Login now"
+        android:textColor="@color/purple"
+        />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

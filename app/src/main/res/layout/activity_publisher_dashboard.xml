@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PublisherDashboardActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--<GridView
+        android:id="@+id/grid_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:columnWidth="90dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />-->
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/marginplus2"
+        android:id="@+id/rl1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="160dp"
+        android:layout_marginLeft="@dimen/marginplus3"
+        android:gravity="center"
+        android:layout_height="160dp"
+        >
+
+        <ImageView
+            android:id="@+id/bookimageView"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/marginplus7"
+            android:scaleType="fitXY"
+            android:src="@drawable/book"
+            android:tint="#2196F3"
+             />
+
+        <TextView
+            android:id="@+id/tv_bookname"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/bookimageView"
+            android:layout_height="wrap_content"
+            android:text=" Total Uploaded Books "
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizesmall"
+            android:layout_marginTop="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_booksize"
+            android:layout_width="@dimen/marginplus20"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/textsizesmall"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_below="@+id/tv_bookname"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/marginplus2"
+        android:id="@+id/rl2"
+        android:layout_marginLeft="@dimen/marginplus2"
+        android:layout_toRightOf="@id/rl1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        >
+        <ImageView
+            android:id="@+id/ebookimageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_marginLeft="@dimen/marginplus9"
+            android:src="@drawable/ebook"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:tint="#228855"
+            />
+
+        <TextView
+            android:id="@+id/tv_ebookname"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/ebookimageView"
+            android:layout_height="wrap_content"
+            android:text=" Total Uploaded eBooks "
+            android:textStyle="bold"
+
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizesmall"
+            android:layout_marginTop="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_ebooksize"
+            android:layout_width="@dimen/marginplus20"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/textsizesmall"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:text="0"
+
+            android:layout_below="@+id/tv_ebookname"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/marginplus3"
+        android:id="@+id/rl3"
+        android:layout_marginLeft="@dimen/marginplus3"
+        android:layout_below="@id/rl1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        >
+        <ImageView
+            android:layout_marginTop="@dimen/marginplus2"
+            android:id="@+id/magazineimageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/marginplus8"
+            android:src="@drawable/magaz"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:tint="#6f8b8a"
+            />
+
+        <TextView
+            android:id="@+id/tv_magazinename"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/magazineimageView"
+            android:layout_height="wrap_content"
+            android:text=" Total Uploaded Magzines "
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizesmall"
+            android:layout_marginTop="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_magazinesize"
+            android:layout_width="@dimen/marginplus20"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsizesmall"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tv_magazinename"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_marginBottom="5dp"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/marginplus3"
+        android:id="@+id/rl4"
+        android:layout_marginLeft="@dimen/marginplus2"
+        android:layout_toRightOf="@id/rl3"
+        android:layout_below="@id/rl2"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        >
+        <ImageView
+            android:id="@+id/orderimageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/marginplus10"
+            android:src="@drawable/monitor"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:tint="#9999ff"
+            />
+
+        <TextView
+            android:id="@+id/tv_ordername"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/orderimageView"
+            android:layout_height="wrap_content"
+            android:text=" Your Books Orders "
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizesmall"
+            android:layout_marginTop="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_bookordersize"
+            android:layout_width="@dimen/marginplus20"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="0"
+            android:textSize="@dimen/textsizesmall"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tv_ordername"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_marginBottom="5dp"/>
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl5"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:layout_below="@id/rl3"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:layout_marginTop="@dimen/marginplus2"
+                android:id="@+id/cartimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus5"
+                android:src="@drawable/monitor"
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                android:tint="#fe1f14"
+                />
+
+            <TextView
+                android:id="@+id/tv_acceptedname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/cartimageView"
+                android:layout_height="wrap_content"
+                android:text=" Your EBook Order "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_ebookordersize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_acceptedname"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl6"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:layout_below="@id/rl4"
+            android:layout_toRightOf="@id/rl5"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/pendingimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus5"
+                android:src="@drawable/shopping"
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                android:tint="#FF7043"
+                />
+
+            <TextView
+                android:id="@+id/tv_pendingname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/pendingimageView"
+                android:layout_height="wrap_content"
+                android:text=" Accepted Books "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_acceptedbooksize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_pendingname"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl7"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:layout_below="@id/rl5"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:gravity="center"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:id="@+id/pendingbookimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pending"
+                android:layout_marginLeft="@dimen/marginplus3"
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                android:tint="#FF7043"
+                />
+
+            <TextView
+                android:id="@+id/tv_pendingbookname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/pendingbookimageView"
+                android:layout_height="wrap_content"
+                android:text=" Pending Books "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/tv_pendingbooksize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_pendingbookname"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl8"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:layout_below="@id/rl6"
+            android:layout_toRightOf="@id/rl7"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:id="@+id/acceptedebookimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus4"
+                android:src="@drawable/shopping"
+                android:scaleType="fitXY"
+                android:tint="#40E0D0"
+                android:background="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_acceptedebookname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/acceptedebookimageView"
+                android:layout_height="wrap_content"
+                android:text=" Accepted E-Books "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/tv_acceptedebooksize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_acceptedebookname"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl9"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_below="@id/rl7"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/pendingebookimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus3"
+                android:src="@drawable/pending"
+                android:scaleType="fitXY"
+                android:tint="#40E0D0"
+                />
+
+            <TextView
+                android:id="@+id/tv_pendingebookname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/pendingebookimageView"
+                android:layout_height="wrap_content"
+                android:text=" Pending E-Books "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tv_pendingebooksize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_pendingebookname"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl10"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_below="@id/rl8"
+            android:layout_toRightOf="@id/rl9"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/addbookimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus1"
+                android:src="@drawable/addbook"
+                android:scaleType="fitXY"
+                android:tint="#40E0D0"
+                />
+
+            <TextView
+                android:id="@+id/tv_addbookname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/addbookimageView"
+                android:layout_height="wrap_content"
+                android:text=" Add Books "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="20dp" />
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl11"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_below="@id/rl9"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/addebookimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus1"
+                android:src="@drawable/addbook"
+                android:scaleType="fitXY"
+                android:tint="#40E0D0"
+                />
+
+            <TextView
+                android:id="@+id/tv_addebookname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/addebookimageView"
+                android:layout_height="wrap_content"
+                android:text=" Add E-Books "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="20dp" />
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl12"
+            android:layout_marginLeft="@dimen/marginplus4"
+            android:layout_toRightOf="@id/rl1"
+            android:layout_below="@id/rl10"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/addmagazineimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:src="@drawable/addbook"
+                android:scaleType="fitXY"
+                android:tint="#40E0D0"
+                />
+
+            <TextView
+                android:id="@+id/tv_addmagazinename"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/addmagazineimageView"
+                android:layout_height="wrap_content"
+                android:text=" Add Magazine "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="20dp" />
+
+
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

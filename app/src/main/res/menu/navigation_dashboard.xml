@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/searching"
+        app:showAsAction="always"
+        android:title="Search" />
+    <item
+        android:visible="false"
+        android:id="@+id/navigation_category"
+        android:icon="@mipmap/ic_more"
+        app:showAsAction="always"
+        android:title="Category" />
+
+</menu>

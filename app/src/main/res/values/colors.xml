@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="description_body">@color/annot_toolbar_icon</color>
+    <color name="open_button">@color/app_color_accent</color>
+    <color name="white">#FFFFFF</color>
+    <color name="trans">#28000000</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#ffffff </color>
+    <!--
+        <color name="colorPrimary">#43A047 </color>
+    -->
+    <!-- <color name="colorAccent">#fe9931</color>-->
+    <color name="colorAccent">#c00a27</color>
+
+    <!--<color name="basic_color">#ffcd00</color>-->
+    <!-- <color name="basic_color">#FF5722</color>-->
+    <color name="purple">#ef6749</color>
+
+
+
+    <color name="red">#d50000</color>
+
+
+    <color name="transparent">#807ECE5B</color>
+
+    <color name="black1">#B9000000</color>
+    <color name="grey">#c0c0c0</color>
+
+    <color name="blue">#2196F3</color>
+    <color name="blue_100">#1075C0</color>
+
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with white text -->
+    <!-- Use with white text -->
+    <!-- Use with white text -->
+    <!-- Use with white text -->
+    <!-- Use with white text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+
+    <!-- Use with black text -->
+    <!-- Use with black text -->
+
+
+</resources>

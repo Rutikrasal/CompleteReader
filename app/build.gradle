@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion myCompileSdkVersion
+    defaultConfig {
+        applicationId "com.pdftron.completereader"
+        minSdkVersion 19
+        targetSdkVersion myTargetSdkVersion
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        manifestPlaceholders = [pdftronLicenseKey: PDFTRON_LICENSE_KEY]
+
+        ndk {
+            // Tells Gradle to build outputs for the following ABIs and package
+            // them into your APK.
+            abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    configurations.all {
+        resolutionStrategy.force "androidx.appcompat:appcompat:$mySupportVersion"
+        resolutionStrategy.force "androidx.legacy:legacy-support-v4:$mySupportVersion"
+        resolutionStrategy.force "androidx.lifecycle:runtime:$myLifeCycleVersion"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':PDFViewCtrlTools')
+    implementation project(':pdfnet-demo-utils')
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    pdfnetGroup dependencies
+    supportLibGroup dependencies
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //Volley
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    //implementation 'com.github.tdscientist:ShelfView:v1.0'
+
+
+    implementation 'com.razorpay:checkout:1.6.4'
+    implementation 'com.github.joielechong:shelfview:2.1.7'
+
+}
+/*
+task appStart(type: Exec, dependsOn: [clean, 'installDebug']) {
+    commandLine 'adb', 'shell', 'am', 'start', '-n', 'com.pdftron.completereader/.MainActivity'
+}*/

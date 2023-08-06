@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.joielechong:shelfview:2.1.7@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68162a00163f8f987e4ab759e14a86a7/jetified-shelfview-2.1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68162a00163f8f987e4ab759e14a86a7/jetified-shelfview-2.1.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68162a00163f8f987e4ab759e14a86a7/jetified-shelfview-2.1.7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

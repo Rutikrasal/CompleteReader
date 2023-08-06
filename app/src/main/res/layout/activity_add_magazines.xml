@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMagazinesActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginplus2"
+            android:background="#4BDEE4DB"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textSize="@dimen/textsizemlarge"
+                        android:text="Magazines Details"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/black"
+                        android:text="Magazine Name"/>
+                    <EditText
+                        android:id="@+id/et_bookname"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Magazine Name"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizesmall"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Description"/>
+                    <EditText
+                        android:id="@+id/et_bookdescription"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:hint="Magazine Description"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizesmall"
+
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/black"
+                        android:text="Editor Name"/>
+                    <EditText
+                        android:id="@+id/et_authorname"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Editor Name"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Publisher Name"/>
+                    <EditText
+                        android:id="@+id/et_publishername"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Publisher Name"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boarder"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@color/trans"
+                        android:text="Pricing"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <CheckBox
+                    android:layout_marginTop="@dimen/marginplus1"
+                    android:id="@+id/checkbox_isfree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check if You Want to Free"
+                    android:checked="true"
+                    />
+                <LinearLayout
+                    android:id="@+id/lebookprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Sell Price"/>
+                    <EditText
+                        android:id="@+id/et_bookprice"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="E-Book Price"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lebookdiscountprice"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Discount Price"/>
+                    <EditText
+                        android:id="@+id/et_bookdiscountprice"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Discount Price"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizesmall"
+
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Quantity"/>
+                    <EditText
+                        android:id="@+id/et_bookquantity"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="How many books you have"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:text="Magazine Images"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_frontimage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/addimage"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/iv_indeximage"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/addimage"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_backimage"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/addimage"
+
+                        />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginplus3"
+                        android:text="Front Image"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Index Image"
+                        android:layout_marginLeft="@dimen/marginplus5"
+
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/marginplus8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back Image"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Upload PNG.JPG format .Image Should be not more than 400kb"
+                    android:textColor="@color/red"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:text="Magazine In PDF Format"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <Button
+                        android:id="@+id/btn_uploadpdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose PDF"
+                        android:textAllCaps="false"
+                        android:background="@drawable/boarder4"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:id="@+id/tv_pdfname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No File Choosen"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="*Upload pdf format. file should not be more than 5MB"
+                        android:textSize="@dimen/textsizeminismall"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:text="Category And Agreement"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Category"/>
+                    <Spinner
+                        android:id="@+id/spn_category"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Select Categoery "
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/ch_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsizesmall"
+                    android:text="I declare that all the information given above all are true and valid. And i read the terms and condition  of this application. "
+                    />
+                <Button
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:id="@+id/btn_sellbook"
+                    android:layout_width="120dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Add Magazine"
+
+                    android:textColor="@color/white"
+                    android:background="@drawable/boarder4"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

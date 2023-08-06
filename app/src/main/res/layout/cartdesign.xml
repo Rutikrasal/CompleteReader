@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boarder"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/marginplus1">
+        <TextView
+            android:id="@+id/tv_bookid"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_bookimagelink"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:id="@+id/image_book"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/pustak_market"
+            android:padding="5dp"
+            />
+        <ImageButton
+            android:visibility="visible"
+            android:id="@+id/imgbtn_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/trash"
+            android:tint="@color/black"
+            android:background="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tv_bookname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/image_book"
+            android:text="pustakmarket"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="@dimen/textsizemedium"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_book_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/image_book"
+            android:layout_below="@+id/tv_bookname"
+            android:textSize="@dimen/textsizesmall"
+            />
+
+        <TextView
+            android:id="@+id/tv_book_quantity"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/image_book"
+            android:layout_below="@+id/tv_bookname"
+            android:textSize="@dimen/textsizesmall"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_book"
+            android:layout_marginTop="@dimen/marginplus2"
+            android:layout_marginRight="@dimen/marginplus2"
+            android:layout_marginBottom="@dimen/marginplus1"
+            android:orientation="vertical"
+            android:layout_below="@id/tv_book_price">
+<EditText
+    android:id="@+id/etquantity"
+    android:layout_marginLeft="@dimen/marginplus10"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    />
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_marginLeft="@dimen/marginplus20"
+                android:background="@color/purple"
+                android:textColor="@color/white"
+                />
+
+
+         <!--   <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/elegant_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/marginplus5"
+                android:textSize="@dimen/textsizesmall"
+                app:textColor="@color/black"
+                app:backGroundColor="@color/transparent1"
+                app:finalNumber="10"
+                app:initialNumber="0" />
+
+-->
+
+
+        </LinearLayout>
+            />
+
+    </RelativeLayout>
+</LinearLayout>

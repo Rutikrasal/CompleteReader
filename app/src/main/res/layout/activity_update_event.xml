@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateEventActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginplus2"
+            android:background="#4BDEE4DB"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:background="@drawable/boarder3"
+                        android:text="Update Event Details"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/black"
+                        android:text="Event Name"/>
+                    <EditText
+                        android:id="@+id/et_eventname"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Event Name"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizesmall"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Description"/>
+                    <EditText
+                        android:id="@+id/et_eventdescription"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:hint="Event Description"
+                        android:gravity="start"
+                        android:textSize="@dimen/textsizesmall"
+
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Event Subject"/>
+                    <EditText
+                        android:id="@+id/et_eventsubject"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Event Subject"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:background="@drawable/boarder3"
+                        android:text="Update Pricing"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <CheckBox
+                    android:layout_marginTop="@dimen/marginplus1"
+                    android:id="@+id/checkbox_isfree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:text="Check if You Want to Free"
+                    android:checked="true"
+                    />
+                <LinearLayout
+                    android:id="@+id/lebookprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Mandhan offline Rupees"/>
+                    <EditText
+                        android:id="@+id/et_eventofflineprice"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Offline Price"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lebookdiscountprice"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Mandhan Online Rupees"/>
+                    <EditText
+                        android:id="@+id/et_eventonlineprice"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Online Price"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsizesmall"
+
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/boarder3"
+                        android:text="Update Your Detalis"
+                        android:textSize="@dimen/textsizemlarge"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_frontimage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/addimage"
+
+                        />
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Photo"
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Upload PNG.JPG format .Image Should be not more than 400kb"
+                    android:textColor="@color/red"
+                    />
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_updateimage"
+                    android:layout_width="150dp"
+                    android:background="@drawable/boarder4"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Update image"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Your Speciality"/>
+                    <EditText
+                        android:id="@+id/et_yourspeciality"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Your Speciality"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Your Business"/>
+                    <EditText
+                        android:id="@+id/et_yourbusiness"
+
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Your Business"
+                        android:textSize="@dimen/textsizesmall"
+                        android:gravity="center"
+                        android:background="@drawable/boarder"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginplus2"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Your Role"/>
+                    <Spinner
+                        android:id="@+id/spn_role"
+                        android:layout_marginLeft="@dimen/marginplus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="Select Categoery "
+                        android:textColor="@color/black"
+                        android:entries="@array/role"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/boarder3"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:text="Resume In PDF Format"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/marginplus2"
+                    >
+                    <Button
+                        android:id="@+id/btn_uploadpdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Update PDF"
+                        android:background="@color/purple"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        />
+                    <TextView
+                        android:id="@+id/tv_pdfname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No File Choosen"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="*Upload pdf format. file should not be more than 5MB"
+                        android:textSize="@dimen/textsizeminismall"
+                        />
+                </LinearLayout>
+                <Button
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_updatepdf"
+                    android:layout_width="150dp"
+                    android:visibility="gone"
+                    android:background="@drawable/boarder4"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Update Resume"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginplus2"
+                android:padding="@dimen/marginplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/boarder3"
+                        android:textSize="@dimen/textsizemlarge"
+
+                        android:text="Agreement"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/ch_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsizesmall"
+                    android:text="I declare that all the information given above all are true and valid. And i read the terms and condition  of this application. "
+                    />
+                <Button
+                    android:layout_marginTop="@dimen/marginplus2"
+                    android:id="@+id/btn_updateevent"
+                    android:layout_width="120dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Update Event"
+
+
+                    android:textColor="@color/white"
+                    android:background="@drawable/boarder4"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

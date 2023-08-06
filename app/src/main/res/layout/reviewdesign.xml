@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/boarder"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    <ImageView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/user"
+        />
+    <TextView
+        android:id="@+id/tv_usename"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/textsizeminismall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_viewreview"
+        android:layout_marginLeft="@dimen/marginplus2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsizemedium"
+        android:textColor="@color/black"
+        />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="end"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_review"
+        android:text="Posted On:"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tv_reviewdate"
+        android:layout_toRightOf="@id/tv_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventDashboardActivity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus2"
+            android:id="@+id/rl1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="160dp"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:gravity="center"
+            android:layout_height="160dp"
+            >
+
+            <ImageView
+                android:id="@+id/eventimageView"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:layout_marginLeft="@dimen/marginplus2"
+                android:scaleType="fitXY"
+                android:src="@drawable/addbook"
+                android:tint="#2196F3"
+                />
+
+            <TextView
+                android:id="@+id/tv_eventname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/eventimageView"
+                android:layout_height="wrap_content"
+                android:text=" ADD EVENT "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus2"
+            android:id="@+id/rl2"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:layout_toRightOf="@id/rl1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:id="@+id/ebookimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/marginplus2"
+                android:layout_marginLeft="@dimen/marginplus9"
+                android:src="@drawable/event"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:tint="#228855"
+                />
+
+            <TextView
+                android:id="@+id/tv_ebookname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/ebookimageView"
+                android:layout_height="wrap_content"
+                android:text=" My Events "
+                android:textStyle="bold"
+android:layout_marginLeft="@dimen/marginplus7"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl3"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:layout_below="@id/rl1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:layout_marginTop="@dimen/marginplus2"
+                android:id="@+id/magazineimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus8"
+                android:src="@drawable/booking"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:tint="#6f8b8a"
+                />
+
+            <TextView
+                android:id="@+id/tv_bookedeventname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/magazineimageView"
+                android:layout_height="wrap_content"
+                android:text=" Total Booked Events "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_bookedeventsize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizesmall"
+                android:text="0"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_bookedeventname"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/marginplus4"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl4"
+            android:layout_marginLeft="@dimen/marginplus2"
+            android:layout_toRightOf="@id/rl3"
+            android:layout_below="@id/rl2"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:id="@+id/orderimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus10"
+                android:src="@drawable/monitor"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:tint="#9999ff"
+                />
+
+            <TextView
+                android:id="@+id/tv_ordername"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/orderimageView"
+                android:layout_height="wrap_content"
+                android:text=" Accepted Events "
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/marginplus3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_acceptedeventsize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_ordername"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/marginplus4"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/marginplus3"
+            android:id="@+id/rl5"
+            android:layout_marginLeft="@dimen/marginplus3"
+            android:layout_below="@id/rl3"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            >
+            <ImageView
+                android:layout_marginTop="@dimen/marginplus2"
+                android:id="@+id/cartimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/marginplus5"
+                android:src="@drawable/pending"
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                android:tint="#fe1f14"
+                />
+
+            <TextView
+                android:id="@+id/tv_acceptedname"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/cartimageView"
+                android:layout_height="wrap_content"
+                android:text=" Pending Events "
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+                android:layout_marginTop="10dp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_pendingeventsize"
+                android:layout_width="@dimen/marginplus20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="@dimen/textsizesmall"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_acceptedname"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PayEventActivity">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginplus2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+            <TextView
+                android:text="Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsizemedium"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Email:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Contact:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="140dp"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Address:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="140dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Zipcode:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="140dp"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="City:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="170dp"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Event Location:"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/tv_eventlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="90dp"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Event Time:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_eventtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:layout_marginLeft="120dp"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Event Date:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_eventdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Event Fee:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_eventfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="130dp"
+
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+           <!-- <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Pay Mandhan"
+                android:layout_marginTop="@dimen/marginplus3"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@color/purple"
+                />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/marginplus2"
+
+                android:layout_marginTop="@dimen/marginplus2"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Event Type:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_eventtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsizemedium"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="120dp"
+
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:visibility="visible"
+        android:id="@+id/btn_pymandhan"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Mandhan"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple"
+        android:textSize="@dimen/textsizemedium"
+        android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>

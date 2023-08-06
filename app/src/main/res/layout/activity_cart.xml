@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CartActivity">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <!--  <LinearLayout
+          android:visibility="visible"
+          android:id="@+id/linear_empty_cart"
+          android:layout_marginTop="100dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center">
+          <ImageView
+              android:layout_marginTop="5dp"
+              android:layout_width="250dp"
+              android:layout_height="250dp"
+              android:src="@drawable/basket"
+              android:layout_gravity="center"
+              android:tint="@color/black"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Your Basket Is Empty"
+              android:gravity="center"
+              android:textColor="@color/teal_300"
+              android:textStyle="bold"
+              android:textSize="@dimen/textsizemedium"
+              />
+
+          <TextView
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Get It Fill Now!"
+              android:gravity="center"
+              android:textColor="@color/teal_300"
+              android:textStyle="bold"
+              android:textSize="@dimen/textsizemedium"
+              />
+
+          <Button
+              android:id="@+id/btn_shopnow"
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:text="Shop Now"
+              android:background="@color/blue_100"
+              android:textSize="@dimen/textsizemedium"
+              android:textColor="@color/white"/>
+
+      </LinearLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+          <ListView
+
+              android:id="@+id/list"
+
+              android:layout_width="fill_parent"
+
+              android:layout_height="fill_parent" />
+      </RelativeLayout>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartrecycler"
+        android:layout_marginBottom="@dimen/marginplus20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn_checkout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:layout_marginBottom="@dimen/marginplus11"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple"
+            android:textSize="@dimen/textsizemedium"
+            android:textColor="@color/white"/>
+        <FrameLayout
+            android:id="@+id/containercart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Main content -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigationcart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:itemTextColor="@drawable/selector"
+                app:itemIconTint="@drawable/selector"
+
+                android:background="@color/grey"
+                app:menu="@menu/bottom_nevigation" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
